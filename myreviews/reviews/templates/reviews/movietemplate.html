@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<title>Movie Reviews</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'reviews/style.css' %}">
+<body  style="max-width:1600px">
+
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>The Movie Reviews</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right" style="font-size: 25px">MENU :</span>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-search w3-margin-right"></i>Search</button>
+      <button class="w3-button w3-white"><i class="fa fa-bicycle"></i><i class="fa fa-bank"></i><i class="fa fa-automobile"></i> Genres</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-cog w3-margin-right"></i>Settings</button>
+    </div>
+    </div>
+  </header>
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="{% static 'images/halloweentown.jpg' %}" alt="Halloweentown" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <h4><b>The Review preview, click the image for the full review</b></h4>
+        <p>Halloweentown is a classic for me. Although the graphics with the monsters in the movie are pretty
+        cheesy, I feel it still adds to the charm! This is one of those, "its bad, but it's good.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="{% static 'images/mummy.jpg' %}" alt="Mummy" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <h4><b>The Review preview, click the image for the full review</b></h4>
+        <p>Ok first off, Brendan Fraser is an American treasure. The mummy really excelled with the action to comedy
+        ratio. Another instant classic. I haven't watched the newest film but I dont think were missing out on much.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="{% static 'images/nightmarechristmas.jpg' %}" alt="Nightmare" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <h4><b>The Review preview, click the image for the full review</b></h4>
+        <p>Classic alert!!! This movie is incredible! Watch it with friends or family and I'm sure you will enjoy
+        your cinematic experience. Especially if you sing along with Jack's song when we gets to Christmas Town.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="{% static 'images/shutterisland.jpg' %}" alt="Shutter" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <h4><b>The Review preview, click the image for the full review</b></h4>
+        <p>Leonardo Dicaprio. Should I even say anything else? If you like psychological thrillers then look no
+        further! I think the Oscar Leonardo got for The Remnant was a mistake and he should havve gotten it for
+        Wolf of Wallstreet or Django. Lost my train of thought. This movie is worth a watch, promise.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="{% static 'images/thirteenghosts.jpg' %}" alt="Thirteen" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <h4><b>The Review preview, click the image for the full review</b></h4>
+        <p>I like to start reviews by giving shout outs for the actors who do wonderful jobs. Shaggy from Scooby
+        Doo is in the movie and his acting was wonderful. Ok, if you like horror/thriller movies with interesting
+        twists paired with an interesting world, give this a try. Last remark: it is horror but not scary.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="{% static 'images/klaus.jpg' %}" alt="Klaus" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <h4><b>The Review preview, click the image for the full review</b></h4>
+        <p>I watched this one in during the 2020 Christmas season. I think I got teary eyed like, 2 or 3 times throughout
+        the film so uhhh yeah. The animation is amazing. The story is an origin story take on St. Nikolas. If you steer clear
+        from animated films you are missing out.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" style="font-size: 25px" class="w3-bar-item w3-black w3-button">«</a>
+      <a href="#" style="font-size: 25px" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" style="font-size: 25px" class="w3-bar-item w3-black w3-button">2</a>
+      <a href="#" style="font-size: 25px" class="w3-bar-item w3-black w3-button">3</a>
+      <a href="#" style="font-size: 25px" class="w3-bar-item w3-black w3-button">4</a>
+      <a href="#" style="font-size: 25px" class="w3-bar-item w3-black w3-button">»</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-quarter">
+      <h3>About The Reviews</h3>
+      <p style="font-size: 20px">Hey everyone! I hope everyone is taking it easy! Anyways, this is a site where I give my hilarious, uncut, raw
+          take on the biggest movies to ever be released to the public! I hope everyone enjoys!</p>
+    </div>
+
+      <div class="vl w3-left w3-margin-right"></div>
+    <div class="w3-threequarter">
+      <h3 class="w3-margin-right">UPCOMING REVIEWS</h3>
+      <ul class="w3-ul ">
+        <li class="w3-padding-16">
+          <img src="{% static 'images/hpseries.jpg' %}" class="w3-left w3-margin-right" style="width:400px">
+            <h4><b>The Harry Potter Movie Series</b></h4><br>
+          <span style="font-size: 17px">After receiving all the requests I am so excited to say we are bringing
+              the Harry Potter movie series to the review table! Follow along while I give my take on each individual
+          film in the series!</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24"></div>
+
+<!-- End page content -->
+</div>
+
+</body>
+</html>

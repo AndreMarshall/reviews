@@ -1,0 +1,52 @@
+img {
+
+}
+
+img.w3-hover-opacity {
+    cursor: pointer;
+     width: 30%;
+    height: 40%;
+    border: solid #92a8d1;
+    border-width: 0 4px;
+    border-radius: 25px;
+    transition: 0.5s ease;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+div {
+    text-align: center;
+    font-weight: bold;
+}
+
+body {
+    background-color: #080808;
+
+}
+
+form {
+    padding: 0.5%;
+}
+
+body,h1,h2,h3 {
+    font-family: Consolas, sans-serif;
+    color: aliceblue;
+}
+
+.w3-bar-block .w3-bar-item {
+    padding:20px
+}
+
+header {
+    float: right;
+}
+
+.vl {
+    border-left: 4px solid black;
+    height: 340px;
+    position: absolute;
+    left: 34%;
+}
